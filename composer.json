@@ -1,5 +1,5 @@
 {
-    "name": "draw/fixer",
+    "name": "codraw/fixer",
     "description": "Customer rules for php-cs-fixer",
     "license": "MIT",
     "type": "library",
