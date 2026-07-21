@@ -40,7 +40,9 @@ class Foo {
 }
 '
                 ),
-            ]
+            ],
+            null,
+            'Risky as replacing `self` with `static` changes late static binding behavior when the method is overridden in a child class.'
         );
     }
 
@@ -79,7 +81,7 @@ class Foo {
 
             while (null !== $thisIndex && $thisIndex < $classCloseIndex) {
                 if (null === $nextIndex = $tokens->getNextMeaningfulToken($thisIndex)) {
-                    continue;
+                    break;
                 }
 
                 if ($tokens[$nextIndex]->isGivenKind(\T_DOUBLE_COLON)) {

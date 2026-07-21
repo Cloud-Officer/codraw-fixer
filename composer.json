@@ -1,6 +1,6 @@
 {
     "name": "codraw/fixer",
-    "description": "Customer rules for php-cs-fixer",
+    "description": "Custom rules for php-cs-fixer",
     "license": "MIT",
     "type": "library",
     "keywords": [
@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": ">=8.5",
+        "php": "^8.5",
         "friendsofphp/php-cs-fixer": "^3.13"
     },
     "require-dev": {
@@ -25,7 +25,10 @@
     "autoload": {
         "psr-4": {
             "Draw\\Fixer\\": ""
-        }
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
     },
     "extra": {
         "branch-alias": {
