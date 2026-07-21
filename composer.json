@@ -1,5 +1,5 @@
 {
-    "name": "draw/fixer",
+    "name": "codraw/fixer",
     "description": "Customer rules for php-cs-fixer",
     "license": "MIT",
     "type": "library",
@@ -31,5 +31,8 @@
         "branch-alias": {
             "dev-master": "0.38-dev"
         }
+    },
+    "replace": {
+        "draw/fixer": "self.version"
     }
 }
